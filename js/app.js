@@ -28,17 +28,22 @@ function renderJson(data) {
     code += `\t\t"body": [\n`;
 
     var seu_codigo = data.seu_codigo;
-
-    var seu_codigoSplit = seu_codigo.split("\n");
-
+    var seu_codigoSplit = "";
     var body = "";
 
-    seu_codigoSplit.forEach(element => {
-        console.log(element);
-        body += `\t\t\t"${element}",\n`;
-    });
+    if (seu_codigo = "") {
+        seu_codigoSplit = seu_codigo.split("\n");
 
-    /* console.log(seu_codigoSplit) */
+        seu_codigoSplit.forEach(element => {
+
+            if (element != "") {
+                body += `\t\t\t"${element}",\n`;
+            }
+
+        });
+
+    }
+
 
     code += `${body}\n`;
     code += `\t\t],\n`;
