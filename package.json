@@ -1,0 +1,21 @@
+{
+    "name": "snippet",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "sass": "sass -w scss/main.scss css/main.min.css --style=compressed"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/saulotarsobc/snippet.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/saulotarsobc/snippet/issues"
+    },
+    "homepage": "https://github.com/saulotarsobc/snippet#readme"
+}

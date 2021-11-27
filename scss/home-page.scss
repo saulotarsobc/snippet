@@ -1,0 +1,101 @@
+#home_page {
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*  */
+    #wrap {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        /*  */
+        .col {
+            padding: 20px;
+            width: 50%;
+            min-height: 95vh;
+        }
+        #form {
+            background-color: #95be00;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            /*  */
+            label {
+                margin-top: 10qpx;
+            }
+            #inputs {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                .input_group {
+                    display: flex;
+                    flex-direction: column;
+                    width: 48%;
+                    /*  */
+                    >label {
+                        margin-top: 10px;
+                        font-size: 14px;
+                    }
+                    >input[type=text] {
+                        padding: 3px;
+                        outline: none;
+                        border-radius: 5px;
+                        border: 1px solid gray;
+                        transition: all .1s ease-in-out;
+                        /*  */
+                        &:hover,
+                        &:focus {
+                            border: 1px solid rgb(39, 55, 197)
+                        }
+                    }
+                }
+            }
+            #seu_codigo_wrap {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                >label {
+                    margin-top: 10px;
+                    font-size: 14px;
+                }
+                #seu_codigo {
+                    padding: 3px;
+                    outline: none;
+                    border-radius: 5px;
+                    border: 1px solid gray;
+                    transition: all .1s ease-in-out;
+                    width: 100%;
+                    height: 100%;
+                    /*  */
+                    &:hover,
+                    &:focus {
+                        border: 1px solid rgb(39, 55, 197)
+                    }
+                }
+            }
+        }
+        #code_json_wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /*  */
+            >label {
+                margin-top: 10px;
+                font-size: 14px;
+            }
+            #code_json {
+                background-color: #fff;
+                color: #333;
+                font-size: 18px;
+                padding: 3px;
+                width: 98%;
+                height: 98%;
+                border-radius: 5px;
+            }
+        }
+    }
+}
